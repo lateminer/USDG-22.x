@@ -86,6 +86,7 @@ void WalletInit::AddWalletOptions(ArgsManager& argsman) const
 #endif
     argsman.AddArg("-staking=<true/false>", strprintf("Enables or disables staking (default: %u)", DEFAULT_STAKE), ArgsManager::ALLOW_ANY, OptionsCategory::WALLET);
 	argsman.AddArg("-stakecache=<true/false>", strprintf("Enables or disables the staking cache; significantly improves staking performance, but can use a lot of memory (default: %u)", DEFAULT_STAKE_CACHE), ArgsManager::ALLOW_ANY, OptionsCategory::WALLET);
+    argsman.AddArg("-staketimio=<n>", strprintf("Proof of stake timeout. (default: %u)", DEFAULT_STAKETIMIO), ArgsManager::ALLOW_ANY, OptionsCategory::WALLET);
 	argsman.AddArg("-reservebalance", strprintf("Reserved balance not used for staking (default: %u)", DEFAULT_RESERVE_BALANCE), ArgsManager::ALLOW_ANY, OptionsCategory::WALLET);
 
     argsman.AddArg("-walletrejectlongchains", strprintf("Wallet will not create transactions that violate mempool chain limits (default: %u)", DEFAULT_WALLET_REJECT_LONG_CHAINS), ArgsManager::ALLOW_ANY | ArgsManager::DEBUG_ONLY, OptionsCategory::WALLET_DEBUG_TEST);
