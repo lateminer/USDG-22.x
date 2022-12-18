@@ -104,7 +104,7 @@ static const bool DEFAULT_STAKE = true;
 static const bool DEFAULT_STAKE_CACHE = false;
 //! -staketimio default, proof-of-stake timeout in ms
 static const unsigned int DEFAULT_STAKETIMIO = 500;
-
+//! -reservebalance default
 static const CAmount DEFAULT_RESERVE_BALANCE = 0;
 
 class CCoinControl;
